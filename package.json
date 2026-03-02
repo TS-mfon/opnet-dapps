@@ -1,0 +1,23 @@
+{
+    "name": "opnet-staking-vault-contract",
+    "version": "1.0.0",
+    "description": "OPNet Staking Vault Smart Contract",
+    "scripts": {
+        "build": "asc src/index.ts --config asconfig.json --target debug",
+        "clean": "rm -rf build/*",
+        "rebuild": "npm run clean && npm run build"
+    },
+    "dependencies": {
+        "@btc-vision/as-bignum": "0.1.2",
+        "@btc-vision/btc-runtime": "rc"
+    },
+    "devDependencies": {
+        "@btc-vision/assemblyscript": "^0.29.2",
+        "@btc-vision/opnet-transform": "1.1.0",
+        "eslint": "^9.39.2",
+        "@eslint/js": "^9.39.2"
+    },
+    "overrides": {
+        "@noble/hashes": "2.0.1"
+    }
+}
